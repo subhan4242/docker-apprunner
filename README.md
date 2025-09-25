@@ -50,7 +50,7 @@ curl http://localhost:8080/
 
 ## Steg 2: Lag en Dockerfile
 
-Opprett en **Dockerfile** i rotmappen (samme mappe som pom.xml)
+Opprett en **Dockerfile** i rotmappen (**viktig** samme mappe som pom.xml)
 
 ```dockerfile
 FROM eclipse-temurin:21-jdk AS build
