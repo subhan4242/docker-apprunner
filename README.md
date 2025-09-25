@@ -16,7 +16,7 @@ I denne oppgaven skal du:
   - **Spring Boot:** 3.x (seneste versjon)
   - **Packaging:** Jar
   - **Java:** 21
-  - Legg til dependency: `Spring Web` (for REST API)
+- **viktig** Legg til dependency: `Spring Web` (for REST API)
 - Trykk **Generate**, last ned zip, og pakk ut prosjektet inn i repoet ditt (i Codespaces).  
 
 Lag en enkel controller, f.eks. `HelloController.java`:
@@ -50,7 +50,7 @@ curl http://localhost:8080/
 
 ## Steg 2: Lag en Dockerfile
 
-Opprett en **Dockerfile** i rotmappen:
+Opprett en **Dockerfile** i rotmappen (samme mappe som pom.xml)
 
 ```dockerfile
 FROM eclipse-temurin:21-jdk AS build
