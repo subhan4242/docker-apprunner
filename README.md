@@ -74,13 +74,21 @@ docker run -p 8080:8080 springboot-demo
 
 ## Steg 3: Push til Amazon ECR
 
+0. Laste ned aws cli
+
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+
+Før du fortsetter må du også kjøre `aws configure` legge inn dine aksessnøkler, og velge eu-west-1 som region
+
 1. Lag ECR-repoet ditt:
 
-Før du fortsetter må du kjøre `aws configure` legge inn dine aksessnøkler, og velge eu-west-1 som region
-
-   ```bash
-   aws ecr create-repository --repository-name springboot-demo
-   ```
+ ```bash
+ aws ecr create-repository --repository-name springboot-demo
+ ```
 
 3. Logg inn i ECR:
 
