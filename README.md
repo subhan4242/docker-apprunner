@@ -82,8 +82,6 @@ docker run -p 8080:8080 springboot-demo
 
 2. Logg inn i ECR:
 
-(Bytt 244530008913 til 244530008913)
-
    ```bash
    aws ecr get-login-password --region eu-west-1 \
      | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
