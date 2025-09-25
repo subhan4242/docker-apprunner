@@ -7,37 +7,6 @@ I denne oppgaven skal du:
 3. Publisere imaget til **Amazon ECR**
 4. Starte en **AWS App Runner-tjeneste** fra imaget ditt
 
----
-
-## Steg 1: Opprett Spring Boot-applikasjonen
-
-- Gå til [https://start.spring.io/](https://start.spring.io/)
-- Velg:
-    - **Project:** Maven
-    - **Language:** Java
-    - **Spring Boot:** 3.x (seneste versjon)
-    - **Packaging:** Jar
-    - **Java:** 21
-    - Legg til dependency: `Spring Web` (for REST API)
-- Trykk **Generate**, last ned zip, og pakk ut prosjektet inn i repoet ditt (i Codespaces).
-
-Lag en enkel controller, f.eks. `HelloController.java`:
-
-```java
-package com.example.demo;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class HelloController {
-    @GetMapping("/")
-    public String hello() {
-        return "Hello from Spring Boot on App Runner!";
-    }
-}
-```
-
 ## Steg 1: Opprett Spring Boot-applikasjonen
 
 - Gå til [https://start.spring.io/](https://start.spring.io/)
