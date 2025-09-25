@@ -1,12 +1,3 @@
-#Bruk tidligere labber - (Flip Class)
-
-* Lag en ny Spring Boot applikasjon, eller en eksisterende om det er enklere
-* Lag en Dockerfile, eller bruk en eksisterende til å pakke applikasjonen deres som et Docker Image
-* Publiser det Docker Image til Amazon Elastic Container Registry
-* Når applikasjonen først ligger i ECR, så er det enkelt å gjøre denne tilgjengelig med PAAS tjenesten AWS App runner.
-
-## Cheat sheet 
-
 # Oppgave: Fra Spring Boot til AWS App Runner 🚀
 
 I denne oppgaven skal du:
