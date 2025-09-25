@@ -1,4 +1,4 @@
-# Oppgave: Fra Spring Boot til AWS App Runner 🚀
+# Oppgave: Fra Spring Boot til AWS App Runner 
 
 I denne oppgaven skal du:
 
