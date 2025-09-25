@@ -82,18 +82,18 @@ docker run -p 8080:8080 springboot-demo
 
 2. Logg inn i ECR:
 
-(Bytt <account-id> til 244530008913)
+(Bytt 244530008913 til 244530008913)
 
    ```bash
    aws ecr get-login-password --region eu-west-1 \
-     | docker login --username AWS --password-stdin <account-id>.dkr.ecr.eu-west-1.amazonaws.com
+     | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
    ```
 
 3. Tagg og push:
 
    ```bash
-   docker tag springboot-demo:latest <account-id>.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
-   docker push <account-id>.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
+   docker tag springboot-demo:latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
+   docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
    ```
 
 
