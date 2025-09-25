@@ -86,8 +86,9 @@ Før du fortsetter må du også kjøre `aws configure` legge inn dine aksessnøk
 
 1. Lag ECR-repoet ditt:
 
+Bytt ut navnet <repo name>
  ```bash
- aws ecr create-repository --repository-name springboot-demo
+ aws ecr create-repository --repository-name <repo name>
  ```
 
 3. Logg inn i ECR:
