@@ -76,18 +76,20 @@ docker run -p 8080:8080 springboot-demo
 
 1. Lag ECR-repoet ditt:
 
+Før du fortsetter må du kjøre `aws configure` legge inn dine aksessnøkler, og velge eu-west-1 som region
+
    ```bash
    aws ecr create-repository --repository-name springboot-demo
    ```
 
-2. Logg inn i ECR:
+3. Logg inn i ECR:
 
    ```bash
    aws ecr get-login-password --region eu-west-1 \
      | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
    ```
 
-3. Tagg og push:
+4. Tagg og push:
 
    ```bash
    docker tag springboot-demo:latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
