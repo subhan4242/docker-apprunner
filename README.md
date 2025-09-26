@@ -101,7 +101,7 @@ Bytt ut navnet <repo name>
 4. Tagg og push:
 
    ```bash
-   docker tag springboot-demo:latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
+   docker tag <repo name>:latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
    docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/springboot-demo:latest
    ```
 
